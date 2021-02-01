@@ -8,6 +8,7 @@ RUN apk add --update \
     python3 \
     py-pip \
     build-base \
+    bash \
     git=$GIT_VERSION \
     jq=$JQ_VERSION \
     && pip install awscli==$AWSCLI_VERSION --upgrade --user \
