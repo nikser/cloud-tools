@@ -33,6 +33,7 @@ RUN apk add --update --no-cache \
         binutils \
     && rm glibc-${GLIBC_VER}.apk \
     && rm glibc-bin-${GLIBC_VER}.apk \
-    && adduser -S user -G users
+    && adduser -S user -G users \
+    && curl -sL 'https://sentry.io/get-cli/?_=1.62.0' | bash
 
 USER user
